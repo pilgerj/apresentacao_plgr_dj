@@ -1,0 +1,379 @@
+* {
+    box-sizing: border-box;
+	margin: 0;
+    padding:0;
+	//background-color: black;
+	//background-image: url('D:\DESKTOP\siTe\fotos\gif_plgr.mp4');
+}
+
+body, html{
+	width: 100%;
+	height: 100%;
+	font-family: sans-serif;
+	font-size:22px;
+	line-height: 1.3;
+	display: flex
+}
+
+#titulo {
+	text-align: left;
+	 
+}
+#cabecalho {
+    background-color: black;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+	height: 200px;
+}
+
+#logo{
+	width: 150px;
+	top: 37px;
+	position: absolute;
+	 
+}
+
+#soundcloud{
+	width: 5%;
+	float: right;	
+	
+}
+
+
+
+
+li {
+	font-size: 20px;
+	font-family: Luminari, fantasy;
+}
+
+#biografia{
+	background-color: black;
+	
+}
+/*
+.container {
+  position: relative;
+  width: 50%;
+  
+}*/
+
+
+#video1 {
+  display: block;
+  width: 100%;
+  height: auto;
+  
+}
+
+#video_bg{
+	position: fixed; 
+	display: block;
+	//margin-left: auto;
+    //margin-right: auto;
+	 
+	
+	width: 100%; 
+	height: 100%; 
+	z-index: -10;
+}
+
+@media screen and (max-width: 100px){
+  #video_bg{
+    width: 100%;
+  } 
+}
+
+@media (min-aspect-ratio: 16/9){
+	#video_bg{
+		width:  100%;
+		height: auto;
+		
+	}
+}
+
+@media (max-aspect-ratio: 16/9){
+	#video_bg{
+		width:  auto; 
+		height: 100%;
+		transform: translate(-37%);
+		
+	}
+}
+
+/*
+bkp:
+
+//////////
+    margin: 0;
+    background: yellow;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+*/
+
+
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+#roles{
+	background-color:rgba(0, 0, 0, 0.5);
+	
+	//background-image: url("D:\DESKTOP\siTe\fotos\high.jpg");
+	//border:1.5px solid orange;
+	
+}
+
+#titulos{
+ color: rgb(46,255,76);
+}
+#flyer_1 {
+	float:left;
+	//position: relative;
+	//padding-left: 10%;
+	//padding-right: 10%;
+	//height:9;
+	//min-width:490px;	
+}
+
+#text_flyer1{
+	color: white;
+	text-align: center;
+	top: 20%;
+	font-size: 50px;
+}
+
+#flyer_2 {
+	padding-left: 10%;
+	padding-right: 10%;
+	height:1400px;
+	width:900px;
+}
+
+#text_flyer2{
+	color: white;
+	text-align: center;
+	top: 20%;
+	font-size: 50px;
+}
+
+#flyer_3 {
+	float: left;
+	/*
+	padding-left: 10%;
+	padding-right: 10%;
+	height:1400px;
+	width:900px;*/
+}
+
+#text_flyer3{
+	color: white;
+	text-align: center;
+	top: 20%;	
+	font-size: 50px;
+}
+
+#flyer_4 {
+	padding-left: 10%;
+	padding-right: 10%;
+	height:1400px;
+	width:900px;
+}
+
+#text_flyer4{
+	color: white;
+	text-align: center;
+	top: 20%;
+	font-size: 50px;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+
+#soundcloud-barra{
+	height: 90px;
+	width: 70px;
+	padding-left: 10%;
+	padding-right: 50%;
+}
+
+
+.set-soundcloud{
+	padding-left: 10%;
+	padding-right: 10%;	
+}
+#sets-spotify{
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+
+
+h1{
+	
+	padding-left: 10%;
+	
+	
+	
+}
+h2{
+	font-family: Luminari, fantasy;
+	padding-right: 70%;
+	padding-left: 10%;
+	color: rgb(247, 111, 15);
+	font-size: 220%;
+}
+h3{
+	font-family: Luminari, fantasy;
+}
+#ev1{
+	width: 50%;
+}
+#ev2{
+	float: left;	
+	width: 50%;
+}
+#ev3{
+	float: right;
+	width: 50%;
+		
+}
+#ev4{
+	float: right;
+	width: 50%;
+}
+#materiais{
+	background-color: rgba(0,0,0,0.5);
+	
+}
+#feelz{
+	background-color: rgba(135,31,120,0.5);
+	//float: right;	
+	//vertical-align: top;
+}
+
+#feelz-capa{
+	//float: left;	
+	//padding-left: 10%;
+}
+#sets-soundcloud{
+	background-color: rgba(217,135,25,0.5);
+}
+#matSpotify{
+
+}
+#sets-spotify{
+	padding-left: 10%;
+	background-color: rgba(50,205,50,0.5);
+}
+
+#ftSpotify{
+	padding-left: 2%;
+}
+#titleSpotify{
+	text-align: left;
+	color: rgb(33, 216, 98);
+}
+
